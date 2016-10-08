@@ -1,0 +1,16 @@
+## Fibonnaci sequence from "start" through "finish"
+
+def fiba(start, numb):
+    mylist = []
+    a, b, c = 0, 1, 0
+    for x in xrange(numb):
+        if b >= start:
+            mylist.append(b)
+        a, b = b, b+a  # ALWAYS CHANGE VALUES AT THE SAME TIME
+        #c = a
+        #a = b
+        #b = b + c
+
+    print mylist
+    print len(mylist)
+fiba(0, 31)
