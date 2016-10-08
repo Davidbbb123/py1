@@ -1,0 +1,12 @@
+## find primes
+def find(start, finish):
+    mylist = []
+    for x in xrange(start, finish):
+        for y in xrange(2, x):   #int(x**0.5)+1
+            if x % y == 0:
+                break
+        else:
+            mylist.append(x)
+    print mylist
+    print len(mylist)
+find(1, 99)
